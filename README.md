@@ -7,11 +7,8 @@ https://steamid.amsgaming.in
 To deploy this project run
 
 ```bash
-    sudo apt install curl php-cli php-mbstring git unzip
-    apt install composer
-```
-
-```bash
+  sudo apt install curl php-cli php-mbstring git unzip
+  apt install composer
   composer install
   cp .env.example .env
   php artisan key:generate
