@@ -20,6 +20,7 @@ To run this project, you will need to add the following environment variables to
 
 `STEAM_API_KEY`
 
+To get the api key https://steamcommunity.com/dev/apikey
 
 ## Authors
 
