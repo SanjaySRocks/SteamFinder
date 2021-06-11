@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use SteamID;
-use App\Models\Steam;
 use Steam as Steam2;
 
 class SteamController extends Controller
@@ -85,7 +84,7 @@ class SteamController extends Controller
         {
             $s = new SteamID($id64temp);
         }
-        catch( InvalidArgumentException $e )
+        catch(\InvalidArgumentException $e )
         {
             echo 'Given SteamID could not be parsed.';
         }
@@ -121,15 +120,6 @@ class SteamController extends Controller
         $bans['dslb'] = $pbans->DaysSinceLastBan;
         $bans['nogb'] = $pbans->NumberOfGameBans;
         $bans['eb'] = $pbans->EconomyBan;
-
-        $steamUser = Steam::updateOrCreate(
-            [ 'steamid' => $data['si64'] ],
-            [
-                'personaname' => $data['pn'],
-                'steamid' => $data['si64'],
-                'profileurl' => $data['profile2'],
-                'avatarhash' => $data['avhash']
-            ]);
 
         return view('steaminfo', compact('data','bans'));
     }
