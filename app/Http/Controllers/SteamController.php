@@ -111,6 +111,8 @@ class SteamController extends Controller
 
         $data['steam3'] = $s->RenderSteam3();
         $data['steam32'] = $s->RenderSteam2();
+        $data['account_id'] = $s->GetAccountID();
+        $data['invite_url'] = $s->RenderSteamInvite();
         $data['profile2'] = 'http://steamcommunity.com/profiles/'.$data['si64'].'/';
 
         $pbans = Steam2::user($id64temp)->GetPlayerBans()[0];

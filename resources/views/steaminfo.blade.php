@@ -98,16 +98,17 @@ switch($bans['dslb'])
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#profilelink2"><i class="far fa-clone"></i></button>
 		</div>
 
-		
-
-		{{-- Trade Ban
+		<strong>FiveM, HEX</strong>
 		<div class="input-group mb-3">
-		<div class="input-group-prepend">
-		<span class="input-group-text" id="basic-addon1">@</span>
+		<input type="text" id="_hex" class="form-control bg-white" value="{{ "STEAM:".strtoupper(dechex($data['si64'])) }}" aria-describedby="basic-addon1" readonly="">
+		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#_hex"><i class="far fa-clone"></i></button>
 		</div>
-		<input type="text" id="tradeban" class="form-control bg-white" value="{{ $bans['eb'] }}" aria-describedby="basic-addon1" readonly="">
-		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#tradeban"><i class="far fa-clone"></i></button>
-		</div> --}}
+
+		<strong>Account ID</strong>
+		<div class="input-group mb-3">
+		<input type="text" id="_account_id" class="form-control bg-white" value="{{ $data['account_id'] }}" aria-describedby="basic-addon1" readonly="">
+		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#_account_id"><i class="far fa-clone"></i></button>
+		</div>
 
 
 	</div>
@@ -145,19 +146,21 @@ switch($bans['dslb'])
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#dslb"><i class="far fa-clone"></i></button>
 		</div>
 
-		{{-- @auth --}}
+		Invite URL
+		<div class="input-group mb-3">
+		<input type="text" id="_invite_url" class="form-control bg-white" value="{{ "https://s.team/p/".$data['invite_url'] }}" aria-describedby="basic-addon1" readonly="">
+		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#_invite_url"><i class="far fa-clone"></i></button>
+		</div>
+
 		Extra
 		<div class="input-group mb-3">
 		<input type="text" id="extra" class="form-control bg-white" value="{{ '// '.$data['pn']." ".date("d-F-Y") }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#extra"><i class="far fa-clone"></i></button>
 		</div>
-		{{-- @endauth --}}
-
 
 	</div>
 
 	</div>
-	<!-- <h6 class="float-right">AnonymouS GAminG</h6> -->
 </div>
 </div>
 </div>
