@@ -9,6 +9,8 @@ To deploy this project run
 ```bash
   sudo apt install curl php-cli php-mbstring git unzip
   apt install composer
+  git clone https://github.com/SanjaySRocks/SteamFinder.git
+  cd SteamFinder
   composer install
   cp .env.example .env
   php artisan key:generate
