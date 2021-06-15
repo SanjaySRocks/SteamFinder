@@ -26,6 +26,14 @@ To run this project, you will need to add the following environment variables to
 
 To get the api key https://steamcommunity.com/dev/apikey
 
+
+## Screenshots
+
+![App Screenshot](https://github.com/SanjaySRocks/SteamFinder/screenshot/s1.png)
+![App Screenshot](https://github.com/SanjaySRocks/SteamFinder/screenshot/s2.png)
+  
+
+
 ## Authors
 
 - [@sanjaysrocks](https://www.github.com/sanjaysrocks)
