@@ -1,7 +1,7 @@
 # SteamFinder
 A Steam Finder which search for all possible formats and get the steam details
 
-https://steamid.amsgaming.in
+http://findmysteam.herokuapp.com/
 ## Deployment
 
 To deploy this project run
