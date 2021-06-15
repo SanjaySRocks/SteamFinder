@@ -29,8 +29,8 @@ To get the api key https://steamcommunity.com/dev/apikey
 
 ## Screenshots
 
-![App Screenshot](https://github.com/SanjaySRocks/SteamFinder/screenshots/s1.png)
-![App Screenshot](https://github.com/SanjaySRocks/SteamFinder/screenshots/s2.png)
+![App Screenshot](https://github.com/SanjaySRocks/SteamFinder/blob/main/screenshots/s1.png)
+![App Screenshot](https://github.com/SanjaySRocks/SteamFinder/blob/main/screenshots/s2.png)
   
 
 
