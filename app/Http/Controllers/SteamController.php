@@ -14,13 +14,19 @@ class SteamController extends Controller
         $apikey = env('STEAM_API_KEY');
         $id = $request->steamid;
 
-        $id = str_ireplace("https://", "", $id);
-        $id = str_ireplace("http://", "", $id);
-        $id = str_ireplace("steamcommunity.com/id/", "", $id);
-        $id = str_ireplace("steamcommunity.com/profiles/", "", $id);
-        $id = str_ireplace("/", "", $id);
-        $id = str_ireplace("\\", "", $id);
-        $id = str_ireplace(" ", "", $id);
+        $replace_text = array(
+            'https://',
+            'http://',
+            'steamcommunity.com/id/',
+            'steamcommunity.com/profiles/',
+            '/',
+            '\\',
+            ' '
+        );
+
+        foreach ($replace_text as $replace) {
+            $id = str_ireplace($replace, "", $id);
+        }
 
         $szID = $this->VanityURL($id);
         if($szID == null)
@@ -35,7 +41,7 @@ class SteamController extends Controller
                     return redirect('/'.$tempid)->with('status', 'Profile Found!');
                 }
             }
-            catch( InvalidArgumentException $e )
+            catch(\InvalidArgumentException $e )
             {
                 echo 'Given SteamID could not be parsed.';
                 return redirect()->back()->with('error', 'Failed to get data please check id!');

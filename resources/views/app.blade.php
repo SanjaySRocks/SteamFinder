@@ -90,7 +90,7 @@
 <div class="container text-center">
 <br>
 <hr> 
-<h6>© SteamID Finder 2020 AnonymouS Gaming | <a target="_blank" href="http://steampowered.com/">Powered by Steam</a></h6>
+<h6>© SteamID Finder 2020 | <a target="_blank" class="text-primary" href="http://steampowered.com/">Powered by Steam</a> | <a target="_blank" href="https://github.com/SanjaySRocks"><i class="fab fa-github"></i> GitHub </a></h6>
 </div>
 </footer>
 
