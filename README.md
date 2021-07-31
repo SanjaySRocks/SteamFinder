@@ -39,7 +39,15 @@ sudo nano /etc/apache2/sites-available/steamfinder.in.conf
 
 </VirtualHost>
 ```
-  
+
+Enable site
+```
+a2ensite steamfinder.in.conf
+```
+
+```
+systemctl restart apache2
+```
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
