@@ -1,22 +1,40 @@
 # SteamFinder
 A Steam Finder which search for all possible formats and get the steam details
 
+Feel free to contribute this open source project.
+
 http://findmysteam.herokuapp.com/
 ## Deployment
 
 To deploy this project run
 
+Minimum requirement to run this app: php7.4 
+
 ```bash
-  sudo apt install curl php-cli php-mbstring git unzip
+  apt -y install php7.4 php7.4-{bcmath,bz2,intl,gd,mbstring,mysql,zip,gmp,dom,fpm}
   apt install composer
   git clone https://github.com/SanjaySRocks/SteamFinder.git
   cd SteamFinder
   composer install
   cp .env.example .env
   php artisan key:generate
-  php artisan serve
+  chmod -R 777 storage
 ```
 
+Apache2 config
+```bash
+<VirtualHost *:80>
+        ServerName localhost
+        ServerAlias www.steamfinder.in
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html/path/to/gitfolder/SteamFinder/public/
+
+        <Directory "/var/www/html/path/to/gitfolder/SteamFinder/public">
+        Allowoverride All
+        </Directory>
+
+</VirtualHost>
+```
   
 ## Environment Variables
 
