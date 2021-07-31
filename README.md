@@ -23,6 +23,10 @@ Minimum requirement to run this app: php7.4
 
 Apache2 config
 ```bash
+sudo nano /etc/apache2/sites-available/steamfinder.in.conf
+```
+
+```bash
 <VirtualHost *:80>
         ServerName localhost
         ServerAlias www.steamfinder.in
