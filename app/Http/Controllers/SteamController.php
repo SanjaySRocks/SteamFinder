@@ -94,29 +94,23 @@ class SteamController extends Controller
         {
             echo 'Given SteamID could not be parsed.';
         }
-
+        
         $data['si64'] = $collection['response']['players'][0]['steamid'];
         $data['cvs'] = $collection['response']['players'][0]['communityvisibilitystate'];
-        // $data['prs'] = $collection['response']['players'][0]['profilestate'];
-        if(!empty($collection['response']['players'][0]['profilestate']))
-            $data['prs'] = $collection['response']['players'][0]['profilestate'];
-        else
-            $data['prs'] = "";
 
-        $data['pn'] = $collection['response']['players'][0]['personaname'];
+        $data['prs'] = !empty($collection['response']['players'][0]['profilestate']) ? $collection['response']['players'][0]['profilestate'] : "";
+
+        $data['pn'] = !empty($collection['response']['players'][0]['personaname']) ? $collection['response']['players'][0]['personaname'] : "";
+
         $data['purl'] = $collection['response']['players'][0]['profileurl'];
         $data['av'] = $collection['response']['players'][0]['avatar'];
         $data['avm'] = $collection['response']['players'][0]['avatarmedium'];
         $data['avf'] = $collection['response']['players'][0]['avatarfull'];
         $data['avhash'] = $collection['response']['players'][0]['avatarhash'];
-        $data['ps'] = $collection['response']['players'][0]['personastate'];
+        $data['ps'] = !empty($collection['response']['players'][0]['personastate']) ? $collection['response']['players'][0]['personastate'] : "";
 
         
-
-        if(!empty($collection['response']['players'][0]['realname']))
-            $data['rn'] = $collection['response']['players'][0]['realname'];
-        else
-            $data['rn'] = "";
+        $data['rn'] = !empty($collection['response']['players'][0]['realname']) ? $collection['response']['players'][0]['realname'] : "";
         
         $data['pcid'] = $collection['response']['players'][0]['primaryclanid'];
         $data['createdat'] = $collection['response']['players'][0]['timecreated'];
