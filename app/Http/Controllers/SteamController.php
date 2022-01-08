@@ -130,6 +130,17 @@ class SteamController extends Controller
         $bans['nogb'] = $pbans->NumberOfGameBans;
         $bans['eb'] = $pbans->EconomyBan;
 
-        return view('steaminfo', compact('data','bans'));
+        $hours = Steam2::player($id64temp)->GetOwnedGames();
+
+        if(count($hours) > 0){
+            foreach ($hours as $h) {
+                if($h->appId == 730)
+                {
+                    $hours['csgo'] = $h;
+                    break;
+                }
+            }
+        }
+        return view('steaminfo', compact('data','bans', 'hours'));
     }
 }

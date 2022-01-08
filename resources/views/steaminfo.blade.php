@@ -146,10 +146,16 @@ switch($bans['dslb'])
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#dslb"><i class="far fa-clone"></i></button>
 		</div>
 
-		Invite URL
+		<strong>Invite URL</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="_invite_url" class="form-control bg-white" value="{{ "https://s.team/p/".$data['invite_url'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#_invite_url"><i class="far fa-clone"></i></button>
+		</div>
+
+		<strong>CSGO</strong>
+		<div class="input-group mb-3">
+		<input type="text" id="csgohour" class="form-control bg-white" value="{{ isset($hours['csgo']) ? round($hours['csgo']->playtimeForever/60, 0) .' Hours' : "" }}" aria-describedby="basic-addon1" readonly="">
+		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#csgohour"><i class="far fa-clone"></i></button>
 		</div>
 
 		Extra
