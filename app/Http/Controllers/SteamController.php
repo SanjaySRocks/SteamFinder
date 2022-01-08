@@ -96,7 +96,7 @@ class SteamController extends Controller
         }
         
         $data['si64'] = $collection['response']['players'][0]['steamid'];
-        $data['cvs'] = $collection['response']['players'][0]['communityvisibilitystate'];
+        $data['cvs'] = !empty($collection['response']['players'][0]['communityvisibilitystate']) ? $collection['response']['players'][0]['communityvisibilitystate'] : "";
 
         $data['prs'] = !empty($collection['response']['players'][0]['profilestate']) ? $collection['response']['players'][0]['profilestate'] : "";
 
@@ -112,9 +112,9 @@ class SteamController extends Controller
         
         $data['rn'] = !empty($collection['response']['players'][0]['realname']) ? $collection['response']['players'][0]['realname'] : "";
         
-        $data['pcid'] = $collection['response']['players'][0]['primaryclanid'];
-        $data['createdat'] = $collection['response']['players'][0]['timecreated'];
-        $data['psf'] = $collection['response']['players'][0]['personastateflags'];
+        $data['pcid'] = !empty($collection['response']['players'][0]['primaryclanid']) ? $collection['response']['players'][0]['primaryclanid'] : "";
+        $data['createdat'] = !empty($collection['response']['players'][0]['timecreated']) ? $collection['response']['players'][0]['timecreated'] : "";
+        $data['psf'] = !empty($collection['response']['players'][0]['personastateflags']) ? $collection['response']['players'][0]['personastateflags'] : "";
 
         $data['steam3'] = $s->RenderSteam3();
         $data['steam32'] = $s->RenderSteam2();

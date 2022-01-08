@@ -130,7 +130,7 @@ switch($bans['dslb'])
 
 		<strong>Profile Created</strong>
 		<div class="input-group mb-3">
-		<input type="text" id="p_created" class="form-control bg-white" value="{{ date("F j, Y", $data['createdat']) }}" aria-describedby="basic-addon1" readonly="">
+		<input type="text" id="p_created" class="form-control bg-white" value="{{ !empty($data['createdat']) ? date("F j, Y", $data['createdat']) : "" }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#p_created"><i class="far fa-clone"></i></button>
 		</div>
 
