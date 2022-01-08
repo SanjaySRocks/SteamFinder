@@ -35,7 +35,7 @@
 			  <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-home"></i> Home</a>
 			  {{-- <a class="nav-link" href="/"><i class="fas fa-search"></i> Search</a> --}}
 			  <a class="nav-link" href="https://amsgaming.in">Main Website</a>
-			  <a class="nav-link" href="https://amsgaming.in/buyvip"> VIP Store</a>
+			  <a class="nav-link" href="https://amsgaming.in/pricing"> VIP Store</a>
 			  {{-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> --}}
 			</div>
 		  </div>
