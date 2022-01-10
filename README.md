@@ -4,7 +4,18 @@ A Steam Finder which search for all possible formats and get the steam details
 Feel free to contribute this open source project.
 
 https://steamid.kebabnation.xyz/
+
 http://findmysteam.herokuapp.com/
+
+## Multi-Language Support
+Go to `config/app.php` search for `'locale'` change `'en'` to your lang for example `'ru'` for russian
+
+Support Translation:-
+```
+EN - English
+RU - Russian
+ISR - Israel
+```
 
 ## Deployment
 
@@ -49,16 +60,6 @@ a2ensite steamfinder.in.conf
 
 ```
 systemctl restart apache2
-```
-
-## How to change language?
-Go to `config/app.php` search for `'locale'` change `'en'` to your lang for example 'ru' for russian
-
-Support Translation:-
-```
-EN - English
-RU - Russian
-ISR - Israel
 ```
 
 ## Environment Variables
