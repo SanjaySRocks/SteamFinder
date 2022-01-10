@@ -1,7 +1,6 @@
 # SteamFinder
 A Steam Finder which search for all possible formats and get the steam details
 
-Feel free to contribute this open source project.
 
 https://steamid.kebabnation.xyz/
 
@@ -18,7 +17,7 @@ HE - Hebrew
 ES - Spanish
 ```
 
-To view translation resources/lang/{lang}
+To view translation file `resources/lang/{lang}/trans.php`
 
 ## Deployment
 
@@ -79,7 +78,9 @@ To get the api key https://steamcommunity.com/dev/apikey
 ![App Screenshot](https://github.com/SanjaySRocks/SteamFinder/blob/main/screenshots/s1.png)
 ![App Screenshot](https://github.com/SanjaySRocks/SteamFinder/blob/main/screenshots/s2.png)
   
+## Contributions
 
+Feel free to contribute this open source project.
 
 ## Authors
 
