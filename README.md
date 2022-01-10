@@ -12,9 +12,10 @@ Go to `.env` search for `APP_LANG` change `en` to your lang for example `ru` for
 ### Support Translation:-
 ```
 EN - English
+ES - Spanish
 RU - Russian
 HE - Hebrew
-ES - Spanish
+ZH - Chinese
 ```
 
 To view translation file `resources/lang/{lang}/trans.php`
