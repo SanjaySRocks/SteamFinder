@@ -8,9 +8,9 @@ https://steamid.kebabnation.xyz/
 http://findmysteam.herokuapp.com/
 
 ## Multi-Language Support
-Go to `config/app.php` search for `'locale'` change `'en'` to your lang for example `'ru'` for russian
+Go to `.env` search for `'APP_LANG'` change `'en'` to your lang for example `'ru'` for russian
 
-Support Translation:-
+### Support Translation:-
 ```
 EN - English
 RU - Russian
