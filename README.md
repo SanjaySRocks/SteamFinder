@@ -14,8 +14,11 @@ Go to `.env` search for `APP_LANG` change `en` to your lang for example `ru` for
 ```
 EN - English
 RU - Russian
-ISR - Israel
+HE - Hebrew
+ES - Spanish
 ```
+
+To view translation resources/lang/{lang}
 
 ## Deployment
 
