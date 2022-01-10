@@ -26,16 +26,16 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-		  <a class="navbar-brand" href="/">Steam Finder</a>
+		  <a class="navbar-brand" href="/">{{ __('trans.steam_finder')}}</a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-			  <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-home"></i> Home</a>
+			  <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-home"></i> {{ __('trans.home')}}</a>
 			  {{-- <a class="nav-link" href="/"><i class="fas fa-search"></i> Search</a> --}}
-			  <a class="nav-link" href="https://amsgaming.in">Main Website</a>
-			  <a class="nav-link" href="https://amsgaming.in/pricing"> VIP Store</a>
+			  <a class="nav-link" href="https://amsgaming.in">{{ __('trans.website')}}</a>
+			  <a class="nav-link" href="https://amsgaming.in/pricing"> {{ __('trans.vip_store')}}</a>
 			  {{-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> --}}
 			</div>
 		  </div>
@@ -62,15 +62,15 @@
 
 	<form action="/search" method="post">
 	@csrf
-	Enter SteamID
+	{{ __('trans.enter_steamid')}}
 	<div class="input-group mb-3">
 	<div class="input-group-prepend">
 	<span class="input-group-text"><i class="fab fa-steam-symbol"></i></span>
 	</div>
-		<input id="searchText" name="steamid" type="text" class="form-control" placeholder="SteamID / SteamID3 / SteamID64 / Custom URL / Complete URL" autofocus required>
+		<input id="searchText" name="steamid" type="text" class="form-control" placeholder="{{ __('trans.search_placeholder')}}" autofocus required>
 	</div>
 
-	<button id="search" class="btn btn-primary btn-block mb-3"><i class="fas fa-search"></i> Search</button>
+	<button id="search" class="btn btn-primary btn-block mb-3"><i class="fas fa-search"></i> {{ __('trans.search_button')}}</button>
 	</form>
 </div>
 

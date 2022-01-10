@@ -47,7 +47,7 @@ switch($bans['dslb'])
 <div class="container">
 <div class="card mb-3 shadow-sm">
 <div class="card-body">
-<h2>Result</h2>
+<h2>{{ __('trans.result') }}</h2>
 	<div class="media">
 	<img src="{{ $data['avf'] }}" class="align-self-start mr-3 img-thumbnail" alt="Profile images" width="64">
 	<div class="media-body">
@@ -61,50 +61,50 @@ switch($bans['dslb'])
 	<br>
 	<div class="row mb-5">
 	<div class="col-md">
-		<strong>Player Name</strong>
+		<strong>{{ __('trans.player_name') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="personaname" class="form-control bg-white" value="{{ $data['pn'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#personaname"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>SteamID</strong>
+		<strong>{{ __('trans.steamid') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="steamid32" class="form-control bg-white" value="{{ $data['steam32'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#steamid32"><i class="far fa-clone"></i></button>
 		</div>
 
 
-		<strong>SteamID64</strong>
+		<strong>{{ __('trans.steamid64') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="steamid64" class="form-control bg-white" value="{{ $data['si64'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#steamid64"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>SteamID3</strong>
+		<strong>{{ __('trans.steamid3') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="steamid3" class="form-control bg-white" value="{{ $data['steam3'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#steamid3"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>Custom URL</strong>
+		<strong>{{ __('trans.custom_url') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="profilelink" class="form-control bg-white" value="{{ $data['purl'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#profilelink"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>Profile URL / Permanent Profile link</strong>
+		<strong>{{ __('trans.profile_url') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="profilelink2" class="form-control bg-white" value="{{ $data['profile2'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#profilelink2"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>FiveM, HEX</strong>
+		<strong>{{ __('trans.fivem_hex') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="_hex" class="form-control bg-white" value="{{ "STEAM:".strtoupper(dechex($data['si64'])) }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#_hex"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>Account ID</strong>
+		<strong>{{ __('trans.account_id') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="_account_id" class="form-control bg-white" value="{{ $data['account_id'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#_account_id"><i class="far fa-clone"></i></button>
@@ -114,51 +114,51 @@ switch($bans['dslb'])
 	</div>
 
 	<div class="col-md">
-		<strong>Real Name</strong>
+		<strong>{{ __('trans.real_name') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="realname" class="form-control bg-white" value="{{ $data['rn'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#realname"><i class="far fa-clone"></i></button>
 		</div>
 
 
-		<strong>Profile State</strong>
+		<strong>{{ __('trans.profile_state') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="p_state" class="form-control bg-white" value="{{ $data['ps'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#p_state"><i class="far fa-clone"></i></button>
 		</div>
 
 
-		<strong>Profile Created</strong>
+		<strong>{{ __('trans.profile_created') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="p_created" class="form-control bg-white" value="{{ !empty($data['createdat']) ? date("F j, Y", $data['createdat']) : "" }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#p_created"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>VACBanned</strong>
+		<strong>{{ __('trans.vacbanned') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="vacbanned" class="form-control bg-white" value="{{ $bans['vb'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#vacbanned"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>Days Since Last Ban</strong>
+		<strong>{{ __('trans.last_ban') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="dslb" class="form-control bg-white" value="{{ $bans['dslb'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#dslb"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>Invite URL</strong>
+		<strong>{{ __('trans.invite_url') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="_invite_url" class="form-control bg-white" value="{{ "https://s.team/p/".$data['invite_url'] }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#_invite_url"><i class="far fa-clone"></i></button>
 		</div>
 
-		<strong>CSGO</strong>
+		<strong>{{ __('trans.csgo') }}</strong>
 		<div class="input-group mb-3">
 		<input type="text" id="csgohour" class="form-control bg-white" value="{{ isset($hours['csgo']) ? round($hours['csgo']->playtimeForever/60, 0) .' Hours' : "" }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#csgohour"><i class="far fa-clone"></i></button>
 		</div>
 
-		Extra
+		{{ __('trans.extra') }}
 		<div class="input-group mb-3">
 		<input type="text" id="extra" class="form-control bg-white" value="{{ '// '.$data['pn']." ".date("d-F-Y") }}" aria-describedby="basic-addon1" readonly="">
 		<button class="btn btn-outline-dark" type="button" data-clipboard-target="#extra"><i class="far fa-clone"></i></button>

@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Http;
 use SteamID;
 use Steam as Steam2;
 
+use Illuminate\Support\Facades\App;
+
 class SteamController extends Controller
 {
     public function search(Request $request)
