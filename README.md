@@ -8,7 +8,7 @@ https://steamid.kebabnation.xyz/
 http://findmysteam.herokuapp.com/
 
 ## Multi-Language Support
-Go to `.env` search for `'APP_LANG'` change `'en'` to your lang for example `'ru'` for russian
+Go to `.env` search for `APP_LANG` change `en` to your lang for example `ru` for russian
 
 ### Support Translation:-
 ```
