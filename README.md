@@ -1,11 +1,11 @@
 # SteamFinder
 A Steam Finder which search for all possible formats and get the steam details
 
-![image](https://user-images.githubusercontent.com/30376256/149628128-0cf6b5b7-6d10-466a-bc88-4b36f8ae5ab6.png)
+If you like this project just buy me a coffee :'D
 https://www.buymeacoffee.com/sanjays
 
+## Websites using this app
 https://steamid.kebabnation.xyz/
-
 http://findmysteam.herokuapp.com/
 
 ## Multi-Language Support
