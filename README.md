@@ -1,7 +1,7 @@
 # SteamFinder
 A Steam Finder which search for all possible formats and get the steam details
 
-![image](https://user-images.githubusercontent.com/30376256/149628128-0cf6b5b7-6d10-466a-bc88-4b36f8ae5ab6.png =250x250)
+![image](https://user-images.githubusercontent.com/30376256/149628128-0cf6b5b7-6d10-466a-bc88-4b36f8ae5ab6.png)
 https://www.buymeacoffee.com/sanjays
 
 https://steamid.kebabnation.xyz/
