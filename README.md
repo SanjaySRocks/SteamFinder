@@ -2,6 +2,7 @@
 A Steam Finder which search for all possible formats and get the steam details
 
 If you like this project just buy me a coffee :'D
+![image](https://user-images.githubusercontent.com/30376256/149628627-20610f5b-865f-42a3-9cfe-3bc39a636915.png)
 https://www.buymeacoffee.com/sanjays
 
 ## Websites using this app
